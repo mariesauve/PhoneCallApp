@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/number"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:padding="3dp"
+        android:textColor="@color/grey"
+        android:hint="  Phone Number"
+        android:background="@drawable/edittxt_bg"
+        android:inputType="phone"
+        android:layout_marginTop="18dp"
+        android:textSize="20sp"
+        />
+
+    <ImageButton
+        android:id="@+id/call"
+        android:layout_width="170dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="18dp"
+        android:background="@drawable/button_radius"
+        android:backgroundTint="@color/material_dynamic_tertiary40"
+        android:src="@drawable/baseline_phone_24"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="115dp"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:elevation="10dp"
+            android:padding="12dp"
+            android:background="@drawable/button_radius"
+            android:text="Make A Call App" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/phonebooth" />
+    </FrameLayout>
+
+</LinearLayout>
